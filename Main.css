@@ -7,7 +7,7 @@ body{
     font-family: "Helvetica Neue" , Helvetica, sans-serif;
     background: url(b2.jpg);
 }
-.logincontent
+.username
 {
     position: fixed;
     width: 350px;
@@ -19,7 +19,7 @@ body{
     background: #07A8C3;
     padding-top: 10px;
 }
-.loginheading
+.age
 {
     border-bottom: solid 1px #ECF2F5;
     padding-left: 18px;
@@ -29,7 +29,7 @@ body{
     font-weight: bold;
     font-family: sans-serif;
 }
-label
+.Email
 {
     color: #ffffff;
     display: inline-block;
