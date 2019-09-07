@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>dropdown menu</title>
+	<style>
+	html {
+		background: #E6E3D4;
+	}
+
+	body {
+		font: 100% Bangalore, "Kannada Prabha", Times, serif;
+		line-height: 1.4;
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 20em;
+	}
+
+	h1, h2, h3 {
+		font-size: 2.4em;
+		font-weight: normal;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		color: #575451;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	.cf:before, .cf:after {
+		content:"";
+		display:table;
+	}
+
+	.cf:after {
+		clear:both;
+	}
+
+	/* For IE 6/7 (trigger hasLayout) */
+	.cf {
+		zoom:1;
+	}
+	/*horizontal menu styles*/
+	nav {
+		background: #916A3s1;
+		height: 2.3em;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	ul {
+		background: #D5973C;
+		height: 2em;
+		width: 100%;
+	}
+	li {
+		position: relative;
+	}
+	li a {
+		display: block;
+		line-height: 2em;
+		padding: 0 1em;
+		color: white;
+		text-decoration: none;
+	}
+	li a:hover, .topmenu li:hover > a {
+		background: #916A31;
+		height: 2em;
+		padding-top: .3em;
+		position: relative;
+		top: -.3em;
+		border-radius: .3em .3em 0 0;
+	}
+	.current, a:hover.current, .topmenu li:hover a.current {
+		background: #AD9B7F;
+		color: #eee;
+		padding-top: .3em;
+		border-radius: .3em .3em 0 0;
+		position: relative;
+		top: -.3em;
+		border-bottom: .3em solid #917F63;
+		cursor: default;
+	}
+	/*dropdown menu styles*/
+
+	ul.submenu {
+		float: none;
+		background: #916A31;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 2em;
+		left: -9000em;
+		max-height: 0;
+		-webkit-transition: max-height 0.5s ease-in-out;
+		-moz-transition: max-height 0.5s ease-in-out;
+		-o-transition: max-height 0.5s ease-in-out;
+		-ms-transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-in-out;
+	}
+
+	ul.submenu li {
+		float: none;
+	}
+
+	.topmenu li:hover ul {
+		left: 0;
+		max-height: 10em;
+	}
+
+	ul.submenu li a {
+		border-bottom: 1px solid white;
+		padding: .2em 1em;
+		white-space: nowrap;
+	}
+	ul.submenu li:last-child a {
+		border-bottom: none;
+	}
+	ul.submenu li a:hover {
+		background: #D5973C;
+		height: 2em;
+		padding-top: .2em;
+		top: 0;
+		border-radius: 0;
+	}
+	</style>
+</head>
+<body>
+	<h1>online shopping</h1>
+	<p>Online shopping is experiencing growth like never before especially in developing countries like India. Today almost every netizens buys things of his requirements online. As per reports there are more than 900 small and big online shopping stores or Ecommerce stores in India and many are being launched on a daily basis. Almost all things available in the traditional market are available online. We can buy fruits and vegetables, grocery, stationery etc...</p>
+	<p>There are a lot of benefits of online shopping. One of the major one is ease of shopping and saving of time. When you shop online you tend to save a lot of money too as most of the online shopping sites sell their products at prices less than MRP.</p>
+	<p>There are also various payment options offer to the customers like Cash on delivery, credit card, debit card, net banking etc. Online shops also offer a lot of choice and variety of products to the customers. Online shopping is one of the best things invented by mankind.</p>
+	<h2>Dropdown menu</h2>
+	<nav class="cf">
+		<nav class="cf">
+			<ul class="topmenu">
+				<li><a href="home.htm" title="Home page" class="current">Home</a></li>
+				<li><a href="products.htm" title="browse our products">Products</a>
+					<ul class="submenu">
+						<li><a href="laptops.htm" title="laptops">Laptops</a></li>
+						<li><a href="tablets.htm" title="tablets">Tablets</a></li>
+						<li><a href="phones.htm" title="smartphones">Smartphones</a></li>
+						<li><a href="accessories.htm" title="accessories">Accessories</a></li>
+					</ul>
+				</li>
+				<li><a href="blog.htm" title="read our blog">Blog</a>
+					<ul class="submenu">
+						<li><a href="recent.htm" title="recent articles">Recent articles</a></li>
+						<li><a href="archive.htm" title="archives">Archives</a></li>
+						<li><a href="hall.htm" title="favorite articles">Hall of fame</a></li>
+					</ul>
+				</li>
+				<li><a href="about.htm" title="More about us">About</a></li>
+				<li><a href="contact.htm" title="contact us">Contact</a>
+					<ul class="submenu">
+						<li><a href="service.htm" title="customer service">Customer service</a></li>
+						<li><a href="register.htm" title="register for an account">Register</a></li>
+						<li><a href="support.htm" title="technical support">Technical support</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</nav>
+</body>
+</html>
